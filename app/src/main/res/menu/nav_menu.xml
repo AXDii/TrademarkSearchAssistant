@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/nav_friends"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/search"
+            android:title="商标精准查询" />
+
+        <item
+            android:id="@+id/nav_similar_trademark_enquiries"
+            android:icon="@drawable/nav_mail"
+            android:title="商标近似查询"/>
+        <item
+            android:id="@+id/nav_trademark"
+            android:icon="@drawable/nav_task"
+            android:title="商标申请文件"/>
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/open_book"
+            android:title="商标大全" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_mail"-->
+            <!--android:icon="@drawable/nav_task"-->
+            <!--android:title="报告合成" />-->
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/ic_settings"
+            android:title="设置" />
+    </group>
+</menu>

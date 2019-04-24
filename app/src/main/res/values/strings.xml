@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">商标查询助手</string>
+
+    <!--设置界面文本-->
+    <string name="account_and_privacy_setting">账户与隐私</string>
+    <string name="account_and_security_setting">账户与安全</string>
+    <string name="account_and_security_text_setting">管理账户安全、修改账户密码等</string>
+    <string name="blacklist_setting">关注商标</string>
+    <string name="blacklist_text_setting">添加或删除关注商标</string>
+    <string name="about_and_help_setting">关于与帮助</string>
+    <string name="functional_introduction_setting">功能介绍</string>
+    <string name="functional_introduction_text_setting">查看历史更新</string>
+    <string name="check_update_setting">检查更新</string>
+    <string name="check_update_text_setting">当前版本号 0.0.1 (beta)</string>
+    <string name="feedback_setting">反馈</string>
+    <string name="feedback_text_setting">将您宝贵的意见或建议反馈给我们</string>
+    <string name="logout_setting">退出账户</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="trademark_name">商标名称：</string>
+    <string name="filing_date">申请日期：</string>
+    <string name="petitioner">申请人名称：</string>
+    <string name="use_time">专用权期限：</string>
+    <string name="main_activity_usernam">点击头像进行登陆</string>
+    <string name="first_img">First img</string>
+    <string name="setting">设置</string>
+    <string name="start">开始</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:id="@+id/trademark_csdt"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#444"
+            android:text="商标注册用商品和服务项目申报指南"/>
+
+
+    </LinearLayout>
+    <include layout="@layout/item_line_gap"/>
+
+    <LinearLayout
+        android:id="@+id/accessory"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#444"
+            android:text="附件"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_gap"/>
+
+</LinearLayout>

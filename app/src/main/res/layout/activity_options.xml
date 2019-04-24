@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:id="@+id/trademark_Application_file"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#444"
+            android:text="商标申请文件"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_gap"/>
+
+    <LinearLayout
+        android:id="@+id/trademark_Application_guide"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#444"
+            android:text="申请指南"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_gap"/>
+
+    <LinearLayout
+        android:id="@+id/trademark_Application_flow_chart"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#444"
+            android:text="注册流程图"/>
+
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/item_line_gap"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/trademark_Application_others"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="78dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:background="@drawable/ripple_bg"-->
+        <!--android:clickable="true">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="#444"-->
+            <!--android:text="马德里申请"/>-->
+
+
+    <!--</LinearLayout>-->
+
+    <include layout="@layout/item_line_gap"/>
+
+    <LinearLayout
+        android:id="@+id/trademark_Application_goods_and_service"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#444"
+            android:text="商品和服务分类"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_gap"/>
+
+    <LinearLayout
+        android:id="@+id/trademark_Application_guide_graphic_elements"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#444"
+            android:text="图形要素"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_gap"/>
+
+    <LinearLayout
+        android:id="@+id/trademark_Application_rates"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#444"
+            android:text="收费标准"/>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/item_line_gap"/>
+
+
+</LinearLayout>

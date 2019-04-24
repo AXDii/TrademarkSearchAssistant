@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.newproject">
+    <!-- begin: baidu speech sdk  权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- end: baidu speech sdk  权限 -->
+    <!-- SDCard中创建与删除文件权限 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" /> <!-- 读取SDCard数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 向SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/app_icon_1"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+        <activity android:name=".client.ui.settingActivitys.settings.CleanActivity"
+            android:label="清除缓存"/>
+        <activity
+            android:name=".client.ui.similarTrademarkEnquiries.SimilarTrademarkEnquiriesActivity"
+            android:label="商标近似查询" />
+        <activity android:name=".client.ui.newsDetailActivity.NewsDetailActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.newproject.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".client.ui.mainActivitys.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:label="商标查询助手"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".client.ui.trademarkSetActivitys.TrademarkActivity"
+            android:label="商标大全" />
+        <activity
+            android:name=".client.ui.optionsActivitys.OptionsActivity"
+            android:label="商标申请" />
+        <activity
+            android:name=".client.ui.optionsActivitys.trademarkApplication.FilesActivity"
+            android:label="商标申请文件(点击打开)" />
+        <activity
+            android:name=".client.ui.optionsActivitys.trademarkApplication.GuideActivity"
+            android:label="申请指南" />
+        <activity
+            android:name=".client.ui.optionsActivitys.trademarkApplication.FlowChartActivity"
+            android:label="注册流程图" />
+        <activity
+            android:name=".client.ui.optionsActivitys.trademarkApplication.GoodsAndServiceActivity"
+            android:label="商品与服务分类" />
+        <activity
+            android:name=".client.ui.optionsActivitys.trademarkApplication.AttachedFilesActivity"
+            android:label="附件(点击打开)" />
+        <activity
+            android:name=".client.ui.optionsActivitys.trademarkApplication.CSDTActivity"
+            android:label="服务与商品项目申请指南" />
+        <activity
+            android:name=".client.ui.optionsActivitys.trademarkApplication.GraphicElementActivity"
+            android:label="图形分类" />
+        <activity
+            android:name=".client.ui.optionsActivitys.trademarkApplication.RatesActivity"
+            android:label="收费标注" />
+        <activity
+            android:name=".client.ui.optionsActivitys.trademarkApplication.ShowHtmlActivity"
+            android:label="文档" />
+        <activity android:name=".client.ui.loginActivity.LoginActivity" />
+        <activity android:name=".client.ui.registerActivitys.RegisterActivity" />
+        <activity
+            android:name=".client.ui.registerActivitys.CompleteInfoPageOneActivity"
+            android:label="完善信息" />
+        <activity
+            android:name=".client.ui.userInfoActivitys.UserInfoActivity"
+            android:label="用户信息" />
+        <activity android:name=".client.ui.userInfoActivitys.UserNotLoginActivity" />
+        <activity android:name=".client.ui.searchActivitys.SearchActivity" />
+        <activity
+            android:name=".client.ui.trademarkInfoActivitys.TrademarkInfoActivity"
+            android:label="商标信息" />
+        <activity
+            android:name=".client.ui.settingActivitys.SettingActivity"
+            android:label="设置" />
+        <activity
+            android:name=".client.ui.settingActivitys.settings.FeedbackActivity"
+            android:label="反馈" />
+        <activity
+            android:name=".client.ui.settingActivitys.settings.AccountAndSecurityActivity"
+            android:label="账户安全" />
+        <activity
+            android:name=".client.ui.settingActivitys.settings.FunctionalIntroductionActivity"
+            android:label="软件指导" />
+
+    </application>
+
+</manifest>

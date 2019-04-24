@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android='http://schemas.android.com/apk/res/android'
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#0078D7">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/register_close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/icon_close_while"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/register_goto_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="转去登陆"
+                android:textColor="#FFF"
+                android:clickable="true"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用手机号码创建账号"
+            android:layout_marginTop="50dp"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="320dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#36000000">
+
+                <EditText
+                    android:id="@+id/register_phone_edit"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:textColor="#FFF"
+                    android:inputType="number"
+                    android:hint="手机号码（暂仅支持中国大陆）"
+                    android:textColorHint="#80FFFFFF"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#36000000">
+
+                <EditText
+                    android:id="@+id/register_code_edit"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:textColor="#FFF"
+                    android:hint="短信验证码"
+                    android:inputType="number"
+                    android:textColorHint="#80FFFFFF"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#0078D7"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/register_gain_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="获取验证码"
+                        android:gravity="center"
+                        android:enabled="false"
+                        android:textColor="#80FFFFFF"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#36000000">
+
+                <EditText
+                    android:id="@+id/register_password_edit"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:textColor="#FFF"
+                    android:hint="密码，6-16字符"
+                    android:inputType="numberPassword"
+                    android:textColorHint="#80FFFFFF"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#0078D7"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+
+                    <CheckBox
+                        android:id="@+id/register_show_password_checkbox"
+                        android:textColor="#FFF"
+                        android:enabled="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/register_show_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="显示密码"
+                        android:gravity="center"
+                        android:textColor="#80FFFFFF"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <Button
+                    android:id="@+id/register_next_step"
+                    android:layout_width="320dp"
+                    android:layout_height="54dp"
+                    android:text="注册"
+                    android:background="#FFF"
+                    android:textColor="#0078D7"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_meeting_problem"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册遇到问题?"
+            android:clickable="true"
+            android:textColor="#FFFFFF"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
